@@ -1,24 +1,30 @@
 package org.home.recordings.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Getter;
-import org.springframework.data.annotation.Id;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Wither;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "recordings")
-@Getter
 @Builder
+@Wither
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Recording {
 
     @Id
-    private final String filename;
-    private final LocalDate date;
-    private final Integer tempo;
-    private final String beat;
-    private final String style;
+    private String filename;
+    private LocalDate date;
+    private Integer tempo;
+    private String beat;
+    private String style;
 
 }

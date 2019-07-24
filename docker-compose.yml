@@ -1,14 +1,16 @@
 version: '2'
 services:
-  mysql:
-    container_name: flask_mysql
+  postgres:
+    container_name: postgres
     restart: always
-    image: mysql:latest
+    image: postgres:10
     environment:
-      MYSQL_ROOT_PASSWORD: 'Jandepora19882!'
-      MYSQL_USER: 'indio'
-      MYSQL_PASS: 'Jandepora19882!'
+      POSTGRES_DB: 'recordings'
+      POSTGRES_USER: 'indio'
+      POSTGRES_PASSWORD: 'Jandepora19882!'
+    ports:
+      - "5432:5432"
     volumes:
-      - recordings-datavolume:/var/lib/mysql
+      - recordings-datavolume:/var/lib/postgres
 volumes:
   recordings-datavolume:
