@@ -11,5 +11,9 @@ public class Config implements RepositoryRestConfigurer {
     @Override
     public void configureRepositoryRestConfiguration(final RepositoryRestConfiguration config) {
         config.exposeIdsFor(Recording.class);
+
+        // CORS
+        config.getCorsRegistry().addMapping("/**");
     }
+
 }

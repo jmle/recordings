@@ -26,5 +26,6 @@ public class Recording {
     private Integer tempo;
     private String beat;
     private String style;
+    private String comments;
 
 }
