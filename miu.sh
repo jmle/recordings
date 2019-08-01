@@ -7,8 +7,8 @@ input="./recordings-test.txt"
 
 while IFS= read -u 3 -r line
 do
-  filename=$(echo ${line} | sed 's/  */ /g' | cut -d' ' -f 11- )
-  date=$(echo ${line} | sed 's/  */ /g' | cut -d' ' -f 11- | awk -F' ' '{ print $3"-"$1"-"$2 }')
+  filename=$(echo ${line} | sed 's/  */ /g' | cut -d' ' -f 11-)
+  date=$(echo ${line} | sed 's/  */ /g' | awk -F' ' '{ print $10"-"$8"-"$9 }')
   echo "Current file: "${filename}
   read -p "Tempo?" tempo
   read -p "Beat?" beat
