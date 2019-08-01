@@ -1,4 +1,3 @@
-
 263459      768 -rwxrwxrwx    1 indio            staff              391942 May 23  2010 ./Grabaciones movil/3 (movil nuevo)/Clip sonido 133.amr
 263462    11264 -rwxrwxrwx    1 indio            staff             5760390 May 23  2010 ./Grabaciones movil/3 (movil nuevo)/Clip sonido 134.amr
 263506      256 -rwxrwxrwx    1 indio            staff               41606 May 25  2010 ./Grabaciones movil/3 (movil nuevo)/Clip sonido 135.amr
